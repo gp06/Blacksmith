@@ -2,11 +2,10 @@ package Database;
 
 public class Setdatabase 
 {
-	Setdatabase()
-	{
-		Database ID_Mine[] = new Database[13]; 
-		
-		
+	public static Database ID_Mine[] = new Database[13];
+	public static Database ID_Equip[] = new Database[26];
+	public Setdatabase()
+	{ 	
 		ID_Mine[0] = new ID_Mineral(100,"GOD Mineral",(float) 1.0,5000,1000000000);		
 		ID_Mine[1] = new ID_Mineral(101,"Iron",(float)7.87,608,500);
 		ID_Mine[2] = new ID_Mineral(102,"Low-carbon steel",(float)7.85,700,1000);
@@ -21,7 +20,7 @@ public class Setdatabase
 		ID_Mine[11] = new ID_Mineral(111,"Titanium",(float)4.51,970,10000);
 		ID_Mine[12] = new ID_Mineral(112,"Carbon fiber",(float)1.75,1250,50000);
 		
-		Database ID_Equip[] = new Database[26];
+		
 		
 		ID_Equip[0] = new ID_equipment(1000,6,1,1000,(float)0,500);
 		ID_Equip[1] = new ID_equipment(1001,1,1,2000,(float)50,0);

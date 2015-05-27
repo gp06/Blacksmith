@@ -1,6 +1,6 @@
 package Database;
 
-public abstract class Database {
+public class Database {
 	private int ID;
 	private int price;
 	
