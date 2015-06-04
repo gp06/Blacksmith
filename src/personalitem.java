@@ -16,7 +16,44 @@ public class personalitem {
 		bag_Equip[5] = new personalitem(1000,10);
 	}
 	
-	public additem()
+	public int searchminebag(){
+	    for(int i = 0;i<=13;i++){
+	        if(bag_Mine[i]==null){
+	            return bag_Mine[i];
+	        }
+	        
+	    }
+	    return null;
+	}
+	
+	public static int searchequipbag(){
+        for(int i = 0;i<=20;i++){
+            if(bag_Equip[i]==null){
+                return bag_Equip[i];
+            }
+            
+        }
+        return null;
+    }
+	
+	public int searchweaponbag(){
+        for(int i = 0;i<=10;i++){
+            if(bag_Weapon[i]==null){
+                return bag_Weapon[i];
+            }
+            
+        }
+        return null;
+    }
+	
+	public void additem(int ID){
+	    if(ID<=999){
+	        
+	        bag_Mine[searchminebag()] = ID;
+	    }else if(ID<=9999){
+	        
+	    }
+	}
 	//public additem deleteitem 
 	
 	public personalitem(int ID,int itemnumbers){
