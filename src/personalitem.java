@@ -8,8 +8,15 @@ public class personalitem {
 	
 	public void startpersonalitem()
 	{
-		
+		bag_Equip[0] = new personalitem(1001,1);
+		bag_Equip[1] = new personalitem(1006,1);
+		bag_Equip[2] = new personalitem(1011,1);
+		bag_Equip[3] = new personalitem(1016,1);
+		bag_Equip[4] = new personalitem(1021,5);
+		bag_Equip[5] = new personalitem(1000,10);
 	}
+	
+	public additem()
 	//public additem deleteitem 
 	
 	public personalitem(int ID,int itemnumbers){

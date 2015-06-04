@@ -36,18 +36,18 @@ public class Setdatabase
 		ID_Equip[11] = new ID_equipment(1011,3,1,50,(float)0.5,0);
 		ID_Equip[12] = new ID_equipment(1012,3,2,100,(float)0.6,500);
 		ID_Equip[13] = new ID_equipment(1013,3,3,300,(float)0.8,2000);
-		ID_Equip[14] = new ID_equipment(1001,3,4,200,(float)0.9,5000);
-		ID_Equip[15] = new ID_equipment(1001,3,5,150,(float)0.95,20000);
-		ID_Equip[16] = new ID_equipment(1001,4,1,10,(float)0.6,50);
-		ID_Equip[17] = new ID_equipment(1001,4,2,50,(float)0.7,100);
-		ID_Equip[18] = new ID_equipment(1001,4,3,100,(float)0.9,500);
-		ID_Equip[19] = new ID_equipment(1001,4,4,80,(float)0.925,1000);
-		ID_Equip[20] = new ID_equipment(1001,4,5,60,(float)9.5,4000);
-		ID_Equip[21] = new ID_equipment(1001,5,1,2000,(float)0,0);
-		ID_Equip[22] = new ID_equipment(1001,5,2,2000,(float)0,10000);
-		ID_Equip[23] = new ID_equipment(1001,5,3,2000,(float)0,50000);
-		ID_Equip[24] = new ID_equipment(1001,5,4,2000,(float)0,250000);
-		ID_Equip[25] = new ID_equipment(1001,5,5,2000,(float)0,1000000);
+		ID_Equip[14] = new ID_equipment(1014,3,4,200,(float)0.9,5000);
+		ID_Equip[15] = new ID_equipment(1015,3,5,150,(float)0.95,20000);
+		ID_Equip[16] = new ID_equipment(1016,4,1,10,(float)0.6,50);
+		ID_Equip[17] = new ID_equipment(1017,4,2,50,(float)0.7,100);
+		ID_Equip[18] = new ID_equipment(1018,4,3,100,(float)0.9,500);
+		ID_Equip[19] = new ID_equipment(1019,4,4,80,(float)0.925,1000);
+		ID_Equip[20] = new ID_equipment(1020,4,5,60,(float)9.5,4000);
+		ID_Equip[21] = new ID_equipment(1021,5,1,2000,(float)0,0);
+		ID_Equip[22] = new ID_equipment(1022,5,2,2000,(float)0,10000);
+		ID_Equip[23] = new ID_equipment(1023,5,3,2000,(float)0,50000);
+		ID_Equip[24] = new ID_equipment(1024,5,4,2000,(float)0,250000);
+		ID_Equip[25] = new ID_equipment(1025,5,5,2000,(float)0,1000000);
 		
 	}
 }

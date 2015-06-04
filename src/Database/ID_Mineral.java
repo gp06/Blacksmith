@@ -54,7 +54,7 @@ public class ID_Mineral extends Database
 		this.name = name;
 		this.Density = Density;
 		this.hardness = hardness;
-		this.price = price;
+		
 	
 	}
 }
