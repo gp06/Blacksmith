@@ -1,7 +1,12 @@
+import javax.swing.JOptionPane;
+
+import Database.Setdatabase;
+
 
 public class personalitem {
 	private int ID;
 	private int itemnumbers;
+	private int start;
 	private static personalitem bag_Mine[] = new personalitem[13];
 	private static personalitem bag_Equip[] = new personalitem[20];
 	private static personalitem bag_Weapon[] = new personalitem[10];
@@ -19,42 +24,82 @@ public class personalitem {
 	public int searchminebag(){
 	    for(int i = 0;i<=13;i++){
 	        if(bag_Mine[i]==null){
-	            return bag_Mine[i];
+	            return i;
 	        }
 	        
 	    }
-	    return null;
+	    return 14;
 	}
 	
-	public static int searchequipbag(){
+	public int searchequipbag(){
         for(int i = 0;i<=20;i++){
             if(bag_Equip[i]==null){
-                return bag_Equip[i];
+                return i;
             }
             
         }
-        return null;
+        return 21;
     }
 	
 	public int searchweaponbag(){
         for(int i = 0;i<=10;i++){
             if(bag_Weapon[i]==null){
-                return bag_Weapon[i];
+                return i;
             }
             
         }
-        return null;
+        return 11;
     }
 	
-	public void additem(int ID){
+	public void itemcontrol(int ID,int itemnumber){
 	    if(ID<=999){
-	        
-	        bag_Mine[searchminebag()] = ID;
+	        start =  searchminebag();
+	        if(start==14){
+	            JOptionPane.showMessageDialog(null, "Warning", "Mineral bag is full", JOptionPane.PLAIN_MESSAGE );
+	        }else{
+	            bag_Mine[start] = new personalitem(ID,itemnumber);
+	        }
+	       
 	    }else if(ID<=9999){
-	        
+	        start = searchequipbag();
+	        if(start==21){
+	            JOptionPane.showMessageDialog(null, "Warning", "Equipment bag is full", JOptionPane.PLAIN_MESSAGE );
+	        }else{
+	            bag_Equip[start] = new personalitem(ID,itemnumber);
+	        }
+	    }else{
+	        start = searchweaponbag();
+            if(start==21){
+                JOptionPane.showMessageDialog(null, "Warning", "Equipment bag is full", JOptionPane.PLAIN_MESSAGE );
+            }else{
+                bag_Weapon[start] = new personalitem(ID,itemnumber);
+            }
 	    }
 	}
-	//public additem deleteitem 
+	
+	
+	public void delentitem(int ID){
+	    if(ID<=999){
+	        for(int i = 0;i<personalitem.bag_Mine.length;i++){
+	            if(personalitem.bag_Mine[i].getID() == ID){
+	                bag_Mine[i] = null;
+	            }
+	        }
+	    }else if(ID<=9999){
+	        for(int i = 0;i<personalitem.bag_Equip.length;i++){
+                if(personalitem.bag_Equip[i].getID() == ID){
+                    bag_Equip[i] = null;
+                }
+            }
+        }else{
+            for(int i = 0;i<personalitem.bag_Weapon.length;i++){
+                if(personalitem.bag_Weapon[i].getID() == ID){
+                    bag_Weapon[i] = null;
+                }
+            }
+        }
+	    
+	}
 	
 	public personalitem(int ID,int itemnumbers){
 		this.ID = ID;

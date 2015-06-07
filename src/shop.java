@@ -8,7 +8,6 @@ import Database.Database;
 public class shop {
     
     private int Ditem1 =0,Ditem2 = 0,Ditem3 = 0,Ditem4 = 0,Ditem5 = 0,Ditem6 = 0,Ditem7 = 0,Ditem8 = 0;
-    private int Randnumber=0,RandID=0;
     
     
     
@@ -25,20 +24,26 @@ public class shop {
         if(Day%2=0){
             Ditem5 = 105;
             Ditem6 = 109;
+        }else if(Day==10){
+            Ditem7 = 110;
+        }else if(Day==20){
+            Ditem7 = 111;
+        
+        
+        
+        }else if(Day==30){
+            Ditem8 = 112;
         }else{
             Ditem5 = 106;
             Ditem6 = 110;
         }
-        for(int i = 1;i<=3;i++){
-            Randnumber = (int)(Math.random()*5+1);
-            RandID = (int)(Math.random()*)
-            if(Randnumber==5){
-                Ditem7 = 
-            }
-        }
         
         
         
+        
+    }
+    
+    public void buyitem(int ID,int number){
         
     }
 
