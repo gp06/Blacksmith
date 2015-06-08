@@ -5,7 +5,7 @@ import Database.Setdatabase;
 
 public class personalitem {
 	private int ID;
-	private int itemnumbers;
+	private static int itemnumbers;
 	private int start;
 	private static personalitem bag_Mine[] = new personalitem[13];
 	private static personalitem bag_Equip[] = new personalitem[20];
@@ -51,7 +51,7 @@ public class personalitem {
         return 11;
     }
 	
-	public void itemcontrol(int ID,int itemnumber){
+	public static void itemcontrol(int ID,int itemnumber){
 	    if(ID<=999){
 	        start =  searchminebag();
 	        if(start==14){
@@ -117,7 +117,7 @@ public class personalitem {
 		ID = iD;
 	}
 
-	public int getItemnumbers() {
+	public static int getItemnumbers() {
 		return itemnumbers;
 	}
 

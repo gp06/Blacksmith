@@ -1,13 +1,23 @@
 import java.util.Random;
 
+
 import Database.Database;
+import Database.Getinfo;
+
 
 
 
 
 public class shop {
     
-    private int Ditem1 =0,Ditem2 = 0,Ditem3 = 0,Ditem4 = 0,Ditem5 = 0,Ditem6 = 0,Ditem7 = 0,Ditem8 = 0;
+    private int Ditem1 = 0;
+    private int Ditem2 = 0;
+    private int Ditem3 = 0;
+    private int Ditem4 = 0;
+    private int Ditem5 = 0;
+    private int Ditem6 = 0;
+    private int Ditem7 = 0;
+    private int Ditem8 = 0;
     
     
     
@@ -21,17 +31,17 @@ public class shop {
         Ditem2 = 102;
         Ditem3 = 103;
         Ditem4 = 104;
-        if(Day%2=0){
+        if(Time.getDay()%2==0){
             Ditem5 = 105;
             Ditem6 = 109;
-        }else if(Day==10){
+        }else if(Time.getDay()==10){
             Ditem7 = 110;
-        }else if(Day==20){
+        }else if(Time.getDay()==20){
             Ditem7 = 111;
         
         
         
-        }else if(Day==30){
+        }else if(Time.getDay()==30){
             Ditem8 = 112;
         }else{
             Ditem5 = 106;
@@ -43,9 +53,15 @@ public class shop {
         
     }
     
-    public void buyitem(int ID,int number){
-        
-    }
+//    public void buyitem(int Ditem,int number){
+//        int money;
+//        money = Getinfo.getIDinfo(Ditem).getPrice();
+//        personalitem.itemcontrol(Ditem,number+personalitem.getItemnumbers());
+//        
+//        
+//    }
+
+
 
 
 

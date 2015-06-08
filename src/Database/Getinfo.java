@@ -2,7 +2,7 @@ package Database;
 
 public class Getinfo 
 {
-	public Database getIDinfo(int x)
+	public static Database getIDinfo(int x)
 	{
 		Database tmp = null;
 		if(x>=1000)
