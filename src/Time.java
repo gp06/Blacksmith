@@ -1,7 +1,7 @@
 
 public class Time {
     private int time=0;
-    private int Day=0;
+    private static int Day=0;
     public Time(){
         
     }

@@ -51,7 +51,7 @@ public class personalitem {
         return 11;
     }
 	
-	public static void itemcontrol(int ID,int itemnumber){
+	public void itemcontrol(int ID,int itemnumber){
 	    if(ID<=999){
 	        start =  searchminebag();
 	        if(start==14){
